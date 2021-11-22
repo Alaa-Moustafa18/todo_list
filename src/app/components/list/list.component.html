@@ -2,7 +2,8 @@
 
 <section class="list p-2">
   <div class="form-group">
-    <input type="text" [(ngModel)]="filterKeyword" class="form-control mb-1">
+    <input type="text" [(ngModel)]="filterKeyword" class="form-control mb-1"
+    placeholder="{{'SEARCH' | translate}}">
 
   </div>
   <div
@@ -18,6 +19,7 @@
         (change)="handleChange($event, todo)"
       />
       <i class="fa fa-pencil" [routerLink]="['todo/', todo.id]"></i>
+      <i class="fa fa-trash" (click)="onDelete(todo)"></i>
     </div>
      
     <label

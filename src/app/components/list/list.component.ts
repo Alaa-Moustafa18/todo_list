@@ -34,6 +34,9 @@ export class ListComponent implements OnInit {
 
   handleChange(event: Event, todo: Todo) {
     this.selectedTodos.push((event.target as HTMLInputElement).value);   
+    
+  }
+  onDelete(todo: Todo){
     this.todoservice.deleteTodo(todo).subscribe((res) => {
       console.log('deleted Successfully');
     });

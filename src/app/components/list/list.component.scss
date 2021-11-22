@@ -7,8 +7,13 @@
   .todo{
       font-size: 1.25rem;
       label.selected{
-          color: var(--text-secondary-color)
+          color: var(--text-secondary-color);
+          text-decoration: line-through;
       }
+  }
+  i{
+    margin: 0 1rem;
+    cursor: pointer;
   }
   .add-btn {
     width: 50px;
