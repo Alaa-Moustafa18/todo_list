@@ -1,0 +1,31 @@
+.list {
+  width: 50vw;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: var( --box-shadow);
+  position: relative;
+  .todo{
+      font-size: 1.25rem;
+      label.selected{
+          color: var(--text-secondary-color)
+      }
+  }
+  .add-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    bottom: -30px;
+    left: 45%;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+    }
+  }
+}
+
+
+

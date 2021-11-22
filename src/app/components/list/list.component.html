@@ -1,0 +1,32 @@
+
+
+<section class="list p-2">
+  <div class="form-group">
+    <input type="text" [(ngModel)]="filterKeyword" class="form-control mb-1">
+
+  </div>
+  <div
+    class="d-flex row-reverse flex-justify-between mb-1 todo"
+    *ngFor="let todo of todoList | filter: filterKeyword"
+  >
+    <div>
+      <input
+        type="radio"
+        [id]="todo.id"
+        [name]="todo.name"
+        [value]="todo.name"
+        (change)="handleChange($event, todo)"
+      />
+      <i class="fa fa-pencil" [routerLink]="['todo/', todo.id]"></i>
+    </div>
+     
+    <label
+      [ngClass]="{ selected: selectedTodos.includes(todo.name) }"
+      [for]="todo.id"
+      >{{ todo.name }}</label
+    >
+  </div>
+  <div class="add-btn d-flex flex-center" routerLink="/create">
+    <i class="fa fa-plus fa-lg"></i>
+  </div>
+</section>

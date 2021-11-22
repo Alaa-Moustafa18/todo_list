@@ -1,0 +1,34 @@
+<header class="header">
+
+  <div class="d-flex row-reverse flex-justify-between align-center">
+    <div  class="col-3 employee-managment d-flex flex-center ">
+      <span> {{ "HEADER_TITLE" | translate }}</span>
+      <a routerLink="/">
+      <i class="d-flex flex-center  fa fa-twitter"></i></a>
+    </div>
+    <div class="col-9 d-flex row-reverse align-center tasks-managment">
+      <div class="text-info text-right">
+        <h2>نظام إدارة المهام</h2>
+        <h2>Task management system</h2>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="d-flex">
+  <button
+    class="btn btn-lg m-1"
+    type="button"
+    (click)="changeCurrentLang('ar')"
+  >
+    {{ "ARABIC" | translate }}
+  </button>
+  <button
+    class="btn btn-lg m-1"
+    type="button"
+    (click)="changeCurrentLang('en')"
+  >
+    {{ "ENGLISH" | translate }}
+  </button>
+</div>

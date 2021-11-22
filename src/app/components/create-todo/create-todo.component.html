@@ -1,0 +1,34 @@
+<div class="d-flex flex-center">
+  <form [formGroup]="todoGroup" class="p-2">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control mb-1"
+        formControlName="name"
+        [ngClass]="{
+          invalid:
+            todoGroup.get('name')?.touched && todoGroup.get('name')?.invalid
+        }"
+      />
+      <span
+        class="error"
+        *ngIf="
+          todoGroup.get('name')?.touched &&
+          todoGroup.get('name')?.errors?.required
+        "
+      >
+        {{ "VALIDATION.REQUIRED" | translate }}
+      </span>
+    </div>
+    <div class="d-flex flex-center">
+      <button
+        class="btn btn-lg"
+        type="button"
+        [disabled]="todoGroup.invalid"
+        (click)="onSubmit()"
+      >
+        {{ "SUBMIT" | translate }}
+      </button>
+    </div>
+  </form>
+</div>
