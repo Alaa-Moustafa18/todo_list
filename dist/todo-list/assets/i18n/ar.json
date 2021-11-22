@@ -1,0 +1,12 @@
+{
+  "HEADER_TITLE": "إدارة الموظفين",
+  "TASK_MANAGMENT_SYSTEM": "نظام إدارة المهام",
+  "SUBMIT": "إرسال",
+  "ENGLISH": "الإنجليزية",
+  "ARABIC": "العربية",
+  "SEARCH": "بحث",
+  "CHANGE_LANG": "تغيير اللغة",
+  "VALIDATION": {
+    "REQUIRED": "هذا الحقل مطلوب"
+  }
+}

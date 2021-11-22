@@ -1,0 +1,12 @@
+{
+  "HEADER_TITLE": "Emloyees management",
+  "TASK_MANAGMENT_SYSTEM": "Task management system",
+  "SUBMIT": "Submit",
+  "ENGLISH": "English",
+  "ARABIC": "Arabic",
+  "CHANGE_LANG": "Change language",
+  "SEARCH": "Search",
+  "VALIDATION": {
+    "REQUIRED": "This field is required"
+  }
+}
