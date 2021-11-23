@@ -14,15 +14,13 @@
     height: 100px;
     z-index: -2;
     left: -1rem;
-    
     top: 0;
+    html[dir="rtl"] & {
+      right: -1rem;
+      left: initial;
+    }
   }
-  [dir="rtl"]{
-    &:after {
-    right: -1rem;
-    left: initial;
-  }
-}
+  
   .d-flex {
     height: 60px;
   }
